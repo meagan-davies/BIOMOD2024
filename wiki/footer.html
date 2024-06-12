@@ -1,0 +1,88 @@
+<!-- FOOTER -->
+
+<footer>
+    <div id="footer">
+        <div class="row pt-3">
+            <div class="col-md-2">
+                <div class="logo-nav">
+                    <a href="index.html">
+                        <img class="footer-logo" src="" alt="Logo"/>
+                    </a>
+                  
+                  
+                  
+                    <div class="contact-nav pb-4">
+                        <div class="container pt-4">
+                            <section class="mb-4">
+                              <!-- Website -->
+                              <a data-mdb-ripple-init class="btn btn-outline-dark btn-rounded btn-link btn-floating btn-lg text-body m-1" href="https://bmerit.web.app/" role="button" data-mdb-ripple-color="dark">
+                                <i class="fas fa-globe"></i>
+                              </a>
+                          
+                              <!-- Instagram -->
+                              <a data-mdb-ripple-init class="btn btn-outline-dark btn-rounded btn-link btn-floating btn-lg text-body m-1" href="https://www.instagram.com/biomod_ucalgary" role="button" data-mdb-ripple-color="dark">
+                                <i class="fab fa-instagram"></i>
+                              </a>
+                          
+                              <!-- LinkedIn -->
+                              <a data-mdb-ripple-init class="btn btn-outline-dark btn-rounded btn-link btn-floating btn-lg text-body m-1" href="https://www.linkedin.com/company/biomedical-engineering-research-and-innovation-team-bmerit-ucalgary" role="button" data-mdb-ripple-color="dark">
+                                <i class="fab fa-linkedin"></i>
+                              </a>
+                          
+                              <!-- YouTube -->
+                              <a data-mdb-ripple-init class="btn btn-outline-dark btn-rounded btn-link btn-floating btn-lg text-body m-1" href="https://www.youtube.com/@ucalgarybiomod" role="button" data-mdb-ripple-color="dark">
+                                <i class="fab fa-youtube"></i>
+                              </a>
+                          
+                              <!-- Mail -->
+                              <a data-mdb-ripple-init class="btn btn-outline-dark btn-rounded btn-link btn-floating btn-lg text-body m-1" href="mailto:bmerit@ucalgary.ca" role="button" data-mdb-ripple-color="dark">
+                                <i class="fas fa-envelope"></i>
+                              </a>
+                            </section>
+                          </div>                        
+                    </div>
+                </div>
+            <div class="col-md-2">
+                <div class="section">
+                    <a class="nav-title" href="#"><h5>Project</h5></a>
+                    <ul id="project-list">
+                      <li><a href="{{ url_for('pages', page='description') }}">Description</a></li>
+                      <li><a href="{{ url_for('pages', page='modelling') }}">Modelling</a></li>
+                      <li><a href="{{ url_for('pages', page='experiments') }}">Experiments</a></li>
+                      <li><a href="{{ url_for('pages', page='results') }}">Results</a></li>
+                      <li><a href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="section">
+                    <a class="nav-title" href="#"><h5>ELSI</h5></a>
+                    <ul id="elsi-list">
+                      <li><a href="{{ url_for('pages', page='safety') }}">Safety</a></li>
+                      <li><a href="{{ url_for('pages', page='ethics') }}">Ethics</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="section">
+                    <a class="nav-title" href="#"><h5>Team</h5></a>
+                    <ul id="team-list">
+                      <li><a href="{{ url_for('pages', page='members') }}">Members</a></li>
+                      <li><a href="{{ url_for('pages', page='sponsors') }}">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>   
+        </div>
+        <div class="row pt-3 pb-3">
+            <div class="centered col-md-12">
+                <p>The repository used to create this website is available at <a href="https://github.com/meagan-davies/BIOMOD2024">github.com/meagan-davies/BIOMOD2024</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+<!-- MDB JS -->
+<script type="module">
+    import { Ripple, initMDB } from "https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js";
+    initMDB({ Ripple });
+</script>
